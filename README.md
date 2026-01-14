@@ -15,16 +15,21 @@ enum StatusCode {
 আবার যদি আমি চাই যে কোনো একটা ভ্যারিয়েবলের নির্দিষ্ট কিছুই ভ্যালু হতে পারবে সবসময়, এর বাইরে অন্য কোনো ভ্যালু এক্সেপ্টেড না, তখন চাইলে এনাম ব্যবহার করা যায় ।
 তাহলে এটা তুলনামূলকভাবে বেশি রিডেবল হয়।
 
-example: enum Direction{
+example:
+```ts
+enum Direction{
     up, down, left, right;
 }
 
 let move: Direction=Direction.up;
 console.log(move);
-
+```
 
 ## 5. Provide an example of using union and intersection types in TypeScript.
-Ans:Union example: type stringOrNumber = string | number;
+Ans:
+Union example: 
+```ts
+type stringOrNumber = string | number;
 function formatValue(value:stringOrNumber):stringOrNumber{
     if(typeof value==="string"){
         return value.toUpperCase();
@@ -38,14 +43,15 @@ function formatValue(value:stringOrNumber):stringOrNumber{
 }
 
 console.log(formatValue(10));
+```
 
 Intersection example:
-
+```ts
 type user = {
     name: string;
 }
 type admin = {
     canDeleteUser: boolean;
 }
-
 type Admin = user & admin;
+```
