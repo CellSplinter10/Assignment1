@@ -1,5 +1,6 @@
 
-// 4. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+4. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+Ans: 
 'enums' হচ্ছে এক ধরণের কনস্ট্যান্টকে নাম সেয়ার পদ্ধতি। আমি যদি চাই একটা প্রোগ্রামে যেই কনস্ট্যান্টগুলো আমি ব্যবহার করবো প্রত্যেকটা কিংবা কিছু কন্সট্যান্টের নাম ঠিক করে দিতে যাতে পরে ওই নাম দিয়ে কনস্ট্যান্ট কে এক্সেস করা যায় তাহলে enum ব্যবহার করা যায়।
 example: 
 
@@ -22,8 +23,8 @@ let move: Direction=Direction.up;
 console.log(move);
 
 
-// 5. Provide an example of using union and intersection types in TypeScript.
-
+5. Provide an example of using union and intersection types in TypeScript.
+Ans:
 Union example: type stringOrNumber = string | number;
 function formatValue(value:stringOrNumber):stringOrNumber{
     if(typeof value==="string"){
